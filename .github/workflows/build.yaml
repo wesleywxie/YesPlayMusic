@@ -1,6 +1,10 @@
 name: Build / Release
 
-on: [push, pull_request]
+on:
+  pull_request:
+    branches: [ release ]
+  push:
+    branches: [ release ]
 
 jobs:
   release:
